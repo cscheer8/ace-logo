@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ACE standalone animation — development preview</title>
+<style>
+body { margin:0; color:#dfe3e9; background:#111318; font:15px system-ui,sans-serif; }
+main { max-width:820px; margin:auto; padding:24px; } h1 { font-size:20px; font-weight:500; }
+#asset { width:min(100%,480px); margin:auto; background:repeating-conic-gradient(#1d2026 0% 25%,#252830 0% 50%) 50% / 24px 24px; }
+p { line-height:1.6; color:#aeb5bf; } button { padding:10px 18px; background:#242831; color:white; border:1px solid #606773; border-radius:5px; }
+a { color:#ef5261; }
+</style>
+<main>
+<h1>ACE · Standalone animation preview</h1>
+<p id="status">Development placeholder — official source artwork is required for brand approval. Checkerboard is preview-only.</p>
+<div id="asset"></div>
+<button id="replay" type="button">Replay animation</button>
+<p>5.5 seconds · 768 × 1024 · transparent VP9 WebM / opaque H.264 MP4. Motion preferences are respected.</p>
+<a href="exports/contact-sheet.jpg">Inspect rendered key frames</a>
+</main>
+<script type="module">
+import { mountACEAnimation } from './src/player.js';
+let cleanup = mountACEAnimation(document.querySelector('#asset'));
+document.querySelector('#replay').addEventListener('click', () => { cleanup(); cleanup = mountACEAnimation(document.querySelector('#asset')); });
+fetch('./exports/render-manifest.json').then(r=>r.json()).then(m=> { document.querySelector('#status').textContent = m.status + '. Checkerboard is preview-only.'; });
+</script>
+</html>

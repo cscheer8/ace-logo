@@ -1,0 +1,23 @@
+{
+  "status": "DEVELOPMENT PLACEHOLDER \u2014 official artwork file required",
+  "source_logo": "assets/logo-placeholder.png",
+  "source_sha256": "e0787680ba76af9144c830eec398e6018e4962e9f25ba8e2b8d068967304af50",
+  "settings": {
+    "fps": 30,
+    "duration": 5.5,
+    "width": 768,
+    "height": 1024,
+    "door_close_start": 0.35,
+    "door_close_end": 1.45,
+    "rotation_start": 1.7,
+    "rotation_end": 3.65,
+    "handoff_start": 2.55,
+    "handoff_end": 2.85,
+    "settle_end": 4.55,
+    "logo_height": 840
+  },
+  "frame_count": 165,
+  "mp4_background": "#0a0c10",
+  "audio": false,
+  "loop": false
+}

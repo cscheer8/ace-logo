@@ -1,0 +1,28 @@
+{
+  "webm": {
+    "codec": "vp9",
+    "dimensions": [
+      768,
+      1024
+    ],
+    "duration": "5.500000",
+    "decoded_frames": "165",
+    "decoded_alpha_range": [
+      0,
+      255
+    ],
+    "final_frame_mean_rgb_error": 1.067
+  },
+  "mp4": {
+    "codec": "h264",
+    "dimensions": [
+      768,
+      1024
+    ],
+    "duration": "5.500000",
+    "decoded_frames": "165",
+    "final_frame_mean_rgb_error": 1.753
+  },
+  "stationary_final_hold": true,
+  "artwork_status": "DEVELOPMENT PLACEHOLDER \u2014 official artwork file required"
+}

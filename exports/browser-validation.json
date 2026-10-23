@@ -1,0 +1,8 @@
+{
+  "chromium_playback_completed": true,
+  "explicit_replay": true,
+  "live_reduced_motion_change": true,
+  "mobile_reduced_motion_still_and_reserved_layout": true,
+  "failed_video_uses_still": true,
+  "page_errors": []
+}

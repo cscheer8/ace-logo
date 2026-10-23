@@ -1,0 +1,14 @@
+{
+  "fps": 30,
+  "duration": 5.5,
+  "width": 768,
+  "height": 1024,
+  "door_close_start": 0.35,
+  "door_close_end": 1.45,
+  "rotation_start": 1.7,
+  "rotation_end": 3.65,
+  "handoff_start": 2.55,
+  "handoff_end": 2.85,
+  "settle_end": 4.55,
+  "logo_height": 840
+}
